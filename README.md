@@ -1,2 +1,2 @@
-# ycdtwm
-You Can't Do That With MicroPython! PyCon AU 2023 talk
+# ycdtim
+You Can't Do That In MicroPython! PyCon AU 2023 talk

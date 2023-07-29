@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<link rel="icon" href="media/favicon.ico">
+		<title>You Can't Do That In MicroPython! by Matt Trentini for PyCon AU 2023</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,7 +17,21 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+
+				<section><h1>You Can't Do That In MicroPython!</h1>
+					<h2>Matt Trentini for PyCon AU 2023</h2>
+				</section>
+
+				<section>Slide 1.5
+					<pre><code data-trim data-noescape>
+						(def lazy-fib
+						  (concat
+						   [0 1]
+						   ((fn rfib [a b]
+								(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+						  </code></pre>
+				</section>
+
 				<section>Slide 2</section>
 			</div>
 		</div>
